@@ -11,7 +11,32 @@ namespace RobotController
         {
             string[] roomSize = getBoardSize();
             printRoom(roomSize);
+            string[] startingPosition = getRobotStartingPosition();
+            printRoomWithStartingPosition(roomSize, startingPosition);
             Console.ReadLine();
+        }
+
+        private static void printRoomWithStartingPosition(string[] roomSize, string[] startingPosition)
+        {
+            int startingRow;
+            int startingColumn;
+            var startingDirection = "";
+            startingRow = int.Parse(startingPosition[0]);
+            startingColumn = int.Parse(startingPosition[1]);
+            startingDirection = startingPosition[2];
+        }
+
+        private static string[] getRobotStartingPosition()
+        {
+
+            Console.WriteLine("Please put in the robots starting position. 2 digits and a direction( N / E / S / W)");
+
+            var secondInput = Console.ReadLine();
+            var inputArray = secondInput.Split();
+
+            return inputArray;
+
+
         }
 
         private static void printRoom(string[] roomSize)
