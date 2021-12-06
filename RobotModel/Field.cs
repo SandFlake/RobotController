@@ -16,8 +16,8 @@ namespace RobotModel
 
         public Field(int x, int y)
         {
-            RowNumber = x;
-            ColumnNumber = y;
+            ColumnNumber = x;
+            RowNumber = y;
         }
     }
 }

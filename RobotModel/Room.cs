@@ -13,20 +13,27 @@ namespace RobotModel
 
         public Field[,] theGrid { get; set; }
 
-        public Room(int r, int c)
+        public Room(int c, int r)
         {
-            RowSize = r;
             ColumnSize = c;
+            RowSize = r;
 
-            theGrid = new Field[r, c];
+            theGrid = new Field[c, r];
 
             for (int i = 0; i < r; i++)
             {
                 for (int j = 0; j < c; j++)
                 {
-                    theGrid[i, j] = new Field(i, j);
+                    theGrid[j, i] = new Field(j, i);
                 }
             }
+        }
+
+        public void setRowAndColumn(string[] roomSize)
+        {
+            int columnSize = int.Parse(roomSize[0]);
+            int rowSize = int.Parse(roomSize[1]);
+
         }
 
         public bool isSafe(int x, int y)
@@ -40,5 +47,6 @@ namespace RobotModel
                 return true;
             }
         }
+
     }
 }
