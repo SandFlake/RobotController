@@ -71,7 +71,7 @@ namespace RobotController
 
             while (!validInput)
             {
-                Console.WriteLine("The input you left was invalid. Please only leave input in the form of 2 numbers separated by a space.");
+                Console.WriteLine("The input you left was invalid. Please only leave input in the form of 2 numbers separated by a space. Extra spaces or letters will cause troubles.");
 
                 firstInput = Console.ReadLine();
                 isEmpty = string.IsNullOrEmpty(firstInput);
@@ -137,7 +137,7 @@ namespace RobotController
 
             while (!validInput)
             {
-                Console.WriteLine("The input you left was invalid. Please only leave input in the form of 2 numbers and 1 letter separated by a space.");
+                Console.WriteLine("The input you left was invalid. Please only leave input in the form of 2 numbers and 1 letter separated by a space. A starting position outside the room will cause troubles.");
                 secondInput = Console.ReadLine();
                 isEmpty = string.IsNullOrEmpty(secondInput);
                 isCorrectLength = secondInput.Split().Length == 3;
@@ -220,7 +220,7 @@ namespace RobotController
 
             while (!valid)
             {
-                Console.WriteLine("You entered suspicious characters. Please only use R for turning right, L for turning left, and F for walking forward.");
+                Console.WriteLine("You entered suspicious characters. Please only use R for turning right, L for turning left, and F for walking forward. Other letters or numbers will cause troubles.");
                 thirdInput = Console.ReadLine();
                 isEmpty = string.IsNullOrEmpty(thirdInput);
                 containsIllegalCharacters = (illegalLetters.Any(thirdInput.ToUpper().Contains));
