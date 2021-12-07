@@ -29,24 +29,5 @@ namespace RobotModel
             }
         }
 
-        public void setRowAndColumn(string[] roomSize)
-        {
-            int columnSize = int.Parse(roomSize[0]);
-            int rowSize = int.Parse(roomSize[1]);
-
-        }
-
-        public bool isSafe(int x, int y)
-        {
-            if (x < 0 || x >= RowSize || y < 0 || y >= ColumnSize)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
-
     }
 }

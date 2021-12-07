@@ -23,7 +23,7 @@ namespace RobotModel
         {
             foreach (var instruction in instructions)
             {
-                if (instruction.ToString() == "R")
+                if (instruction.ToString().ToUpper() == "R")
                 {
                     switch (direction)
                     {
@@ -41,7 +41,7 @@ namespace RobotModel
                             break;
                     }
                 }
-                else if (instruction.ToString() == "L")
+                else if (instruction.ToString().ToUpper() == "L")
                 {
                     switch (direction)
                     {
@@ -59,7 +59,7 @@ namespace RobotModel
                             break;
                     }
                 }
-                else if (instruction.ToString() == "F")
+                else if (instruction.ToString().ToUpper() == "F")
                 {
                     switch (direction)
                     {
@@ -75,7 +75,6 @@ namespace RobotModel
                         case Direction.West:
                             columnNumber -= 1;
                             break;
-
                     }
                 }
 

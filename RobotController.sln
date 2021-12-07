@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotController", "RobotController\RobotController.csproj", "{9385EFA7-56C8-4DDD-AE22-D296883ABF22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotController", "RobotController\RobotController.csproj", "{9385EFA7-56C8-4DDD-AE22-D296883ABF22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotModel", "RobotModel\RobotModel.csproj", "{00C39320-BAE0-4D44-BF30-D8ABB8F821BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotModel", "RobotModel\RobotModel.csproj", "{00C39320-BAE0-4D44-BF30-D8ABB8F821BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotTest", "RobotTest\RobotTest.csproj", "{BBE89092-1A0A-4E55-9E96-C91851D3DB09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{00C39320-BAE0-4D44-BF30-D8ABB8F821BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00C39320-BAE0-4D44-BF30-D8ABB8F821BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00C39320-BAE0-4D44-BF30-D8ABB8F821BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBE89092-1A0A-4E55-9E96-C91851D3DB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE89092-1A0A-4E55-9E96-C91851D3DB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE89092-1A0A-4E55-9E96-C91851D3DB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE89092-1A0A-4E55-9E96-C91851D3DB09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
